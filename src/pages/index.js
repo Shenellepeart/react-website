@@ -7,6 +7,7 @@ import { homeObjOne, homeObjThree, homeObjTwo } from "../components/InfoSection/
 import svg1 from '../images/svg-1.svg'
 import svg2 from '../images/svg-2.svg'
 import svg3 from '../images/svg-3.svg'
+import Services from "../components/Services";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,7 @@ const Home = () => {
     {/* Can't access image from homeObjOne */}
       <InfoSection {...homeObjOne} srcImage={svg1} />
       <InfoSection {...homeObjTwo} srcImage={svg2} />
+      <Services/>
       <InfoSection {...homeObjThree} srcImage={svg3} />
     </>
   );
