@@ -17,37 +17,34 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/signIn">How it works</FooterLink>
-              <FooterLink to="/signIn">Testimonials</FooterLink>
-              <FooterLink to="/signIn">Careers</FooterLink>
-              <FooterLink to="/signIn">Investors</FooterLink>
-              <FooterLink to="/signIn">Terms of Service</FooterLink>
+              <FooterLink to="/">How it works</FooterLink>
+              <FooterLink to="/">Testimonials</FooterLink>
+              <FooterLink to="/">Careers</FooterLink>
+              <FooterLink to="/">Investors</FooterLink>
+              <FooterLink to="/">Terms of Service</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Column2</FooterLinkTitle>
-              <FooterLink to="/signIn">How it works</FooterLink>
-              <FooterLink to="/signIn">Testimonials</FooterLink>
-              <FooterLink to="/signIn">Careers</FooterLink>
-              <FooterLink to="/signIn">Investors</FooterLink>
-              <FooterLink to="/signIn">Terms of Service</FooterLink>
+              <FooterLinkTitle>Contact Us</FooterLinkTitle>
+              <FooterLink to="/">Contact</FooterLink>
+              <FooterLink to="/">Support</FooterLink>
+              <FooterLink to="/">Destinations</FooterLink>
+              <FooterLink to="/">Sponsorships</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Column3</FooterLinkTitle>
-              <FooterLink to="/signIn">How it works</FooterLink>
-              <FooterLink to="/signIn">Testimonials</FooterLink>
-              <FooterLink to="/signIn">Careers</FooterLink>
-              <FooterLink to="/signIn">Investors</FooterLink>
-              <FooterLink to="/signIn">Terms of Service</FooterLink>
+              <FooterLinkTitle>Videos</FooterLinkTitle>
+              <FooterLink to="/">Submit Video</FooterLink>
+              <FooterLink to="/">Ambassadors</FooterLink>
+              <FooterLink to="/">Agency</FooterLink>
+              <FooterLink to="/">Influencer</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Column4</FooterLinkTitle>
-              <FooterLink to="/signIn">How it works</FooterLink>
-              <FooterLink to="/signIn">Testimonials</FooterLink>
-              <FooterLink to="/signIn">Careers</FooterLink>
-              <FooterLink to="/signIn">Investors</FooterLink>
-              <FooterLink to="/signIn">Terms of Service</FooterLink>
+              <FooterLinkTitle>Social Media</FooterLinkTitle>
+              <FooterLink to="/">Instagram</FooterLink>
+              <FooterLink to="/">Facebook</FooterLink>
+              <FooterLink to="/">Youtube</FooterLink>
+              <FooterLink to="/">Twitter</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
