@@ -18,7 +18,7 @@ const Home = () => {
       <SideBar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      // ! Can't access image from homeObjOne
+    {/* Can't access image from homeObjOne */}
       <InfoSection {...homeObjOne} srcImage={svg1} />
     </>
   );
