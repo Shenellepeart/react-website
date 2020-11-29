@@ -15,7 +15,6 @@ import {
   Img,
 } from "./InfoElements";
 
-
 const InfoSection = ({
   id,
   lightBg,
@@ -26,11 +25,12 @@ const InfoSection = ({
   darkText,
   description,
   buttonLabel,
-  img,
+  // img,
   alt,
   srcImage,
   dark,
-  primary
+  primary,
+  dark2
 }) => {
   return (
     <>
@@ -43,7 +43,19 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <SubTitle darkText={darkText}>{description}</SubTitle>
                 <BtnWrap>
-                  <Button to="home" dark={dark} primary={primary}>{buttonLabel}</Button>
+                  <Button
+                    to="home"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    dark={dark}
+                    primary={primary}
+                    dark2={dark2}
+                  >
+                    {buttonLabel}
+                  </Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
