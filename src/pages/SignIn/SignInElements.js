@@ -17,94 +17,93 @@ export const Container = styled.div`
   );
 `;
 export const FormWrap = styled.div`
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-@media screen and (max-width: 400px) {
+  @media screen and (max-width: 400px) {
     height: 80%;
   }
 `;
 
-
 export const Icon = styled(LinkRoute)`
-margin-left: 32px;
-margin-top: 32px;
-text-decoration: none;
-color: ${({theme})=>theme.white};;
-font-weight: 700;
-font-size: 32px;
+  margin-left: 32px;
+  margin-top: 32px;
+  text-decoration: none;
+  color: ${({ theme }) => theme.white};
+  font-weight: 700;
+  font-size: 32px;
 
-@media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     margin-left: 16px;
     margin-top: 8px;
   }
 `;
 
 export const FormContent = styled.div`
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-@media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     padding: 10px;
   }
 `;
 
 export const Form = styled.form`
-background: #010101;
-max-width: 400px;
-height: auto;
-width: 100%;
-z-index: 1;
-display: grid;
-margin: 0 auto;
-padding: 80px 32px;
-border-radius: 4px;
-box-shadow: 0 1px 3px rgba(0,0,0,0.9);
+  background: #010101;
+  max-width: 400px;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  margin: 0 auto;
+  padding: 80px 32px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
-@media screen and (max-width: 400px) {
+  @media screen and (max-width: 400px) {
     padding: 32px 32px;
   }
 `;
 
-
 export const FormH1 = styled.h1`
-margin-bottom: 40px;
-color: ${({theme})=>theme.white};;
-font-size: 20px;
-font-weight: 400;
-text-align: center;
+  margin-bottom: 40px;
+  color: ${({ theme }) => theme.white};
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
 `;
 export const FormLabel = styled.label`
-margin-bottom: 8px;
-font-size: 14px;
-color: ${({theme})=>theme.white};;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: ${({ theme }) => theme.white}; ;
 `;
 
 export const FormInput = styled.input`
-padding: 16px 16px;
-margin-bottom: 32px;
-border: none;
-border-radius: 4px;
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
 `;
 
 export const FormButton = styled.button`
-background: ${({theme})=>theme.primaryColor};
-padding: 16px 0;
-border: none;
-border-radius: 4px;
-color: ${({theme})=>theme.white};;
-font-size: 20px;
-cursor: pointer;
+  background: ${({ theme }) => theme.primaryColor};
+  padding: 16px 0;
+  border: none;
+  border-radius: 4px;
+  color: ${({ theme }) => theme.white};
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 `;
+
 export const Text = styled.span`
-text-align: center;
-margin-top: 24px;
-color: ${({theme})=>theme.white};;
-font-size: 14px;
+  text-align: center;
+  margin-top: 24px;
+  color: ${({ theme }) => theme.white};
+  font-size: 14px;
 `;
-
-

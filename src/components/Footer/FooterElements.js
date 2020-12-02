@@ -41,6 +41,7 @@ export const FooterLinkItems = styled.div`
   width: 160px;
   box-sizing: border-box;
   color: ${({ theme }) => theme.white};
+  
 
   @media screen and (max-width: 420px) {
     margin: 0;
@@ -59,6 +60,7 @@ export const FooterLink = styled(LinkRoute)`
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     color: ${({ theme }) => theme.primaryColor};
@@ -91,8 +93,8 @@ export const SocialLogo = styled(LinkRoute)`
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 16px;
-  /* display: flex;
-  align-items: center; */
+  -webkit-tap-highlight-color: transparent;
+
 `;
 
 export const WebsiteRights = styled.small`
@@ -105,9 +107,11 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 200px;
+  
 `;
 
 export const SocialIconLink = styled.a`
   color: ${({theme})=>theme.white};
   font-size: 24px;
+  -webkit-tap-highlight-color: transparent;
 `;

@@ -14,6 +14,7 @@ export const Button = styled(LinkScroll)`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     transition: all 0.2s ease-in-out;

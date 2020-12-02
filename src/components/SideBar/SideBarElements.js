@@ -57,7 +57,7 @@ list-style: none;
 transition: 0.2s ease-in-out;
 color: ${({theme})=>theme.white};
 cursor: pointer;
-
+-webkit-tap-highlight-color: transparent;
 &:hover{
     color: ${({theme})=>theme.primaryColor};
     transition: 0.2s ease-in-out; 
@@ -81,6 +81,7 @@ border: none;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
+-webkit-tap-highlight-color: transparent;
 
 &:hover {
     transition: all 0.2s ease-in-out;
