@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { IconContext } from "react-icons/lib";
 import Navbar from "../components/Navbar";
 import SideBar from "../components/SideBar";
 import HeroSection from "../components/HeroSection";
@@ -17,8 +18,11 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
+
+
   return (
     <>
+    <IconContext.Provider value={{color: '#fff'}}>
       <SideBar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
@@ -28,6 +32,7 @@ const Home = () => {
       <Services/>
       <InfoSection {...homeObjThree} srcImage={svg3} />
       <Footer/>
+      </IconContext.Provider>
     </>
   );
 };
