@@ -32,7 +32,7 @@ export const Icon = styled(LinkRoute)`
 margin-left: 32px;
 margin-top: 32px;
 text-decoration: none;
-color: #fff;
+color: ${({theme})=>theme.white};;
 font-weight: 700;
 font-size: 32px;
 
@@ -73,7 +73,7 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.9);
 
 export const FormH1 = styled.h1`
 margin-bottom: 40px;
-color: #fff;
+color: ${({theme})=>theme.white};;
 font-size: 20px;
 font-weight: 400;
 text-align: center;
@@ -81,7 +81,7 @@ text-align: center;
 export const FormLabel = styled.label`
 margin-bottom: 8px;
 font-size: 14px;
-color: #fff;
+color: ${({theme})=>theme.white};;
 `;
 
 export const FormInput = styled.input`
@@ -92,18 +92,18 @@ border-radius: 4px;
 `;
 
 export const FormButton = styled.button`
-background: #01bf71;
+background: ${({theme})=>theme.primaryColor};
 padding: 16px 0;
 border: none;
 border-radius: 4px;
-color: #fff;
+color: ${({theme})=>theme.white};;
 font-size: 20px;
 cursor: pointer;
 `;
 export const Text = styled.span`
 text-align: center;
 margin-top: 24px;
-color: #fff;
+color: ${({theme})=>theme.white};;
 font-size: 14px;
 `;
 

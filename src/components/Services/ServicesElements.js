@@ -6,7 +6,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background: #010606;
+background: ${({theme})=>theme.secondaryColor};
 
 @media screen and (max-width: 768px){
     height: 1100px;
@@ -35,7 +35,7 @@ padding: 0 50px;
 `;
 
 export const ServicesCard = styled.div`
-background: #fff;
+background: ${({theme})=>theme.white};f;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -63,7 +63,7 @@ margin-bottom:10px;
 
 export const ServicesH1 = styled.h1`
 font-size: 2.5rem;
-color: #fff;
+color: ${({theme})=>theme.white};
 margin-bottom: 64px;
 
 @media screen and (max-width: 480px){

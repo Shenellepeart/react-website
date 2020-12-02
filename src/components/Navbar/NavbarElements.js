@@ -30,7 +30,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkRoute)`
-  color: #fff;
+  color: ${({theme})=>theme.white};;
   display: flex;
   justify-self: center;
   cursor: pointer;
@@ -52,7 +52,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #ffffff;
+    color: ${({theme})=>theme.white};
   }
 `;
 
@@ -72,7 +72,7 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 export const NavLinks = styled(LinkScroll)`
-  color: #fff;
+  color: ${({theme})=>theme.white};;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -81,7 +81,7 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid ${({theme})=>theme.primaryColor};
   }
 `;
 
@@ -95,10 +95,10 @@ export const NavBtn = styled.nav`
 `;
 export const NavBtnLink = styled(LinkRoute)`
 border-radius: 50px;
-background: #01bf71;
+background: ${({theme})=>theme.primaryColor};
 white-space: nowrap;
 padding: 10px 22px;
-color: #010606;
+color: ${({theme})=>theme.secondaryColor};
 font-size: 16px;
 outline: none;
 border: none;
@@ -108,7 +108,7 @@ text-decoration: none;
 
 &:hover{
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: ${({theme})=>theme.white};;
+    color: ${({theme})=>theme.secondaryColor};
 }
 `;
