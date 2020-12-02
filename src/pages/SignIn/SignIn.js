@@ -19,7 +19,7 @@ const SignInPage = () => {
           <Icon to="/">dolla</Icon>
           <FormContent>
               <Form action="#">
-              <FormH1>Sign In</FormH1>
+              <FormH1>Sign In to your account</FormH1>
               <FormLabel htmlFor="email">Email</FormLabel>
               <FormInput type="email" required/>
               <FormLabel htmlFor="password">Password</FormLabel>
