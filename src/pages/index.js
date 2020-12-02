@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IconContext } from "react-icons/lib";
+import { animateScroll as scroll } from "react-scroll";
 import Navbar from "../components/Navbar";
 import SideBar from "../components/SideBar";
 import HeroSection from "../components/HeroSection";
@@ -18,20 +19,22 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
-
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
 
   return (
     <>
     <IconContext.Provider value={{color: '#fff'}}>
       <SideBar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      <Navbar toggle={toggle} logoOnClick={toggleHome}/>
       <HeroSection />
     {/* Can't access image from homeObjOne */}
       <InfoSection {...homeObjOne} srcImage={svg1} />
       <InfoSection {...homeObjTwo} srcImage={svg2} />
       <Services/>
       <InfoSection {...homeObjThree} srcImage={svg3} />
-      <Footer/>
+      <Footer logoOnClick={toggleHome}/>
       </IconContext.Provider>
     </>
   );

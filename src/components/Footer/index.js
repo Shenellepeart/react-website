@@ -16,7 +16,7 @@ import {
   SocialIcons
 } from "./FooterElements";
 
-const Footer = () => {
+const Footer = ({logoOnClick}) => {
   return (
     <FooterContainer>
       <FooterWrap>
@@ -57,7 +57,7 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">dolla</SocialLogo>
+            <SocialLogo to="/"onClick={logoOnClick}>dolla</SocialLogo>
             <WebsiteRights>
               dolla &#169; {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
