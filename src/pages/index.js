@@ -9,9 +9,6 @@ import {
   homeObjThree,
   homeObjTwo,
 } from "../components/InfoSection/Data";
-import svg1 from "../images/svg-1.svg";
-import svg2 from "../images/svg-2.svg";
-import svg3 from "../images/svg-3.svg";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
 
@@ -31,11 +28,10 @@ const Home = () => {
       <SideBar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} logoOnClick={toggleHome} />
       <HeroSection />
-      {/* Can't access image from homeObjOne */}
-      <InfoSection {...homeObjOne} srcImage={svg1} />
-      <InfoSection {...homeObjTwo} srcImage={svg2} />
+      <InfoSection {...homeObjOne}  />
+      <InfoSection {...homeObjTwo} />
       <Services />
-      <InfoSection {...homeObjThree} srcImage={svg3} />
+      <InfoSection {...homeObjThree} />
       <Footer logoOnClick={toggleHome} />
     </>
   );
